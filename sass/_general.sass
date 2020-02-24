@@ -1,0 +1,858 @@
+
+.container
+	position: relative
+
+header
+	height: 151px
+	width: 100%
+	background-color: #4c4c4c
+	display: inline-block
+
+	.header_logo
+		position: absolute
+		margin-top: 12px
+		img 
+			width: 164px
+
+	.ul
+		padding: 0
+
+	.hamburger	
+		display: none
+
+	.menu
+		display: flex
+		justify-content: space-around
+		width: 600px
+		height: 37px
+		margin: 0
+		margin-top: 47px
+		padding: 0
+		list-style-type: none
+
+		li
+			display: inline-block
+			padding: 7px 14px 
+			margin: 0 12px
+			border-bottom: 2px solid #f5b57f
+			a 
+				color: #faf7f7
+				font-size: 18px
+				font-weight: 400
+				line-height: 18px
+				letter-spacing: 1px
+		
+		+btn_hover
+
+	.row 
+		position: relative
+		.header_phone 
+
+			&_link
+				position: absolute
+				right: 0
+				top: 50px
+				width: 215px
+				color: #fefefe
+				font-size: 24px
+				font-weight: 400
+				text-align: right
+				a
+					text-decoration: none
+
+		.header_mphone
+			display: none
+
+		
+.promo
+	position: relative
+	height: 645px
+	width: 100%
+	padding: 110px 0 60px 0
+	overflow: hidden
+	background-color: #000000
+
+	.intro
+		max-height: 100vh
+		&::after
+			content: ""
+			top: 0
+			position: absolute
+			z-index: 1
+			width: 100%
+			height: 100%
+			display: block
+			background-color: #00000050 
+		
+	&_fone
+		position: absolute
+		width: 100%
+		height: auto
+		top: -105px
+		left: 0
+		z-index: 0
+
+	&_title
+		position: relative
+		z-index: 2
+		width: 381px
+		color: #fcfcfc
+		font-size: 50px
+		font-weight: 900
+		text-transform: uppercase
+		letter-spacing: 2.25px
+
+	&_subtitle
+		position: relative
+		z-index: 2
+		margin-top: 34px
+		color: #fcfcfc
+		font-size: 24px
+		font-weight: 400
+		letter-spacing: 1.8px
+
+	&_text
+		position: relative
+		z-index: 2
+		margin-top: 200px
+		color: #fcfcfc
+		font-size: 18px
+		font-weight: 500
+		line-height: 24px
+		letter-spacing: 1.35px
+
+	&_btns
+		position: relative
+		z-index: 2
+		margin-top: 45px
+		margin-top: 30px
+		padding: 0
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+
+		li 
+			display: block
+			padding: 7px 14px
+			margin: 0 12px
+			border-bottom: 2px solid #f5b57f
+			a 
+				display: block
+				color: #faf7f7
+				font-size: 18px
+				font-weight: 400
+				letter-spacing: 1.35px
+				transition: 0.5s all
+				text-decoration: none
+
+		// li:hover
+		// 	transition: 0.2s all
+		// 	border-radius: 15px
+		// 	background-color: #facd8a
+		// 	border-bottom-color: #0c0a07
+		// 	border-right: 2px solid #0c0a07	
+			
+		// 	a 
+		// 		color: #7d5656
+
+		// 	&:active
+		// 		border-left: 2px solid #0c0a07
+		// 		border-top: 2px solid #0c0a07
+		// 		border-right: 0 solid #0c0a07
+		// 		border-bottom: 0 solid #0c0a07
+
+		+btn_hover
+
+.desc_1
+	position: relative
+	margin-top: 25px
+	padding-top: 80px
+	height: 800px
+	width: 100%
+	background: url('../img/desc_1/desc_1.jpg') center (center / cover) no-repeat 
+
+	&_title
+		position: relative
+		z-index: 2
+		opacity: 0
+		width: 750px
+		height: 50px
+		color: #fefefe
+		font-size: 35px
+		font-weight: 600
+		margin: 0
+		transition: 2s all
+		text-transform: uppercase
+
+		content: ""
+		z-index: 1
+		opacity: 0
+		background-color: rgba(0,0 ,0 ,0.6 )
+		transition: 1s all
+
+	&_subtitle
+		position: relative
+		z-index: 2
+		opacity: 0
+		width: 660px
+		height: 35px
+		margin-top: 25px
+		color: #fefefe
+		font-size: 24px
+		font-weight: 500
+		transition: 2s all
+		text-transform: uppercase
+
+		content: ""
+		z-index: 1
+		opacity: 0
+		background-color: rgba(0,0 ,0 ,0.6 )
+		transition: 1s all
+
+	&_hero 
+		position: relative
+		margin: 40px auto
+		width: 560px
+		height: 370px
+		&_item 
+			&_block
+				width: 500px
+				margin-top: 10px
+				display: flex
+				align-items: center
+
+				content: ""
+				z-index: 1
+				opacity: 0
+				background-color: rgba(0,0 ,0 ,0.6 )
+				transition: 1s all
+
+
+				.item_img 
+					position: relative
+					z-index: 2
+					border-radius: 100%
+					overflow: hidden
+					padding-left: 12px
+					padding-top: 12px
+					padding-right: 80px
+					margin-right: 30px
+					width: 124px
+					height: 124px 
+					background-color: #ffffff
+				.text
+					text-align: center
+					width: 247px
+					font-size: 26px
+					color: #ffffff
+					text-transform: uppercase
+
+		.cap
+			.desc_1_hero_item_block 
+				transform: translateY(130px);
+			img 
+				transform: translateX(-20px) translateY(-10px)
+
+		.desc_1_slick-prev, .desc_1_slick-next 
+			border: none
+			background-color: #ffffff00
+
+			content: ""
+			z-index: 1
+			opacity: 0
+			background-color: rgba(0,0 ,0 ,0.6 )
+			transition: 1s all
+			i 
+				color: #ffffff
+				border: none
+				font-size: 40px
+
+		.desc_1_slick-prev
+			position: absolute
+			top: 47%
+			transform: translateX(-31px)
+
+		.desc_1_slick-next 
+			position: absolute
+			top: 47%
+			right: 0
+		
+	.slick-dots
+		list-style-type: none
+		padding: 0
+		width: 100%
+		display: flex 
+
+		button 
+			width: 20px
+			height: 20px
+			border-radius: 100%
+
+	.slick-slider
+		height: 400px
+
+	.link_up,.link_down
+		a	
+			position: absolute
+			right: 0
+			z-index: 3
+			font-size: 50px
+			color: #ffffff
+
+			i 
+				content: ""
+				z-index: 1
+				opacity: 0
+				background-color: rgba(0,0 ,0 ,0.6 )
+				transition: 1s all
+
+	.link_down
+		a
+			bottom: 0
+	
+
+	&:hover
+		// &::after
+		// 	opacity: 1
+
+		.desc_1_title
+			opacity: 1
+			&::after
+			opacity: 1
+
+		.desc_1_subtitle
+			opacity: 1
+
+		.desc_1_hero_item_block
+			opacity: 1
+			border-radius: 62px 
+
+		.desc_1_slick-prev, .desc_1_slick-next 
+			opacity: 1
+
+		.link_up, .link_down
+			a
+				i
+					border-radius: 100%
+					opacity: 1
+
+
+.desc_2
+	position: relative
+	height: 800px
+	width: 100%
+	margin-top: 25px
+	padding-top: 50px
+	background: url('../img/desc_2/desc_2.jpg') center (center / cover) no-repeat 
+
+	&_title
+		position: relative
+		z-index: 2
+		opacity: 0
+		color: #fefefe
+		font-size: 35px
+		text-transform: uppercase
+		font-weight: 700
+		margin: 0
+		transition: 1s all
+
+	&_list_1, &_list_2
+		position: relative
+		width: 550px
+		z-index: 2
+		opacity: 0
+		
+		font-size: 18px
+		margin: 0
+		margin-top: 35px
+		padding: 0
+		font-weight: 500
+		list-style-type: none
+		transition: 2s all
+
+		li
+			width: fit-content
+			padding: 5px 15px 5px 30px
+			position: relative
+			margin-top: 20px
+			display: flex
+			align-items: center
+			line-height: 22px
+			color: #fefefe
+			// border-radius: 50% 0 0 50%
+			
+			content: ""
+			z-index: 1
+			opacity: 0
+			background-color: rgba(0,0 ,0 ,0.6 )
+			transition: 1s all
+
+			&::before
+				position: relative
+				left: -31px
+				top: 1px
+				content: ''
+				display: block
+				width: 39px
+				height: 39px
+				margin-right: 10px
+				background: url('../icons/chek.png') center (center / cover) no-repeat 
+
+	&_list_2
+		transform: translateX(50%)
+		width: 580px
+
+	.link
+		a	
+			position: absolute
+			right: 0
+			font-size: 50px
+			color: #ffffff
+
+			i 
+				content: ""
+				z-index: 1
+				opacity: 0
+				background-color: rgba(0,0 ,0 ,0.6 )
+				transition: 1s all
+
+	#d2_down_gallery
+		height: 50px
+		transform: translateY(-100%)
+		position: absolute
+		right: 0
+
+	.home 
+		a	
+			position: absolute
+			right: 0
+			font-size: 50px
+			color: #ffffff
+			opacity: 0
+			transition: 1s all
+
+
+
+
+	&:hover
+		.desc_2_title
+			opacity: 1
+
+		.desc_2_list_1,  .desc_2_list_2
+			opacity: 1
+			
+			li 
+				border-radius: 20px
+				opacity: 1
+
+		.link 
+			a
+				i
+					border-radius: 100%
+					opacity: 1
+		
+		.home
+			a 
+				widows: 60px
+				height: 60px
+				opacity: 1
+			
+				
+.gallery 
+	position: relative
+	margin-top: 25px
+	padding-top: 50px
+	background: linear-gradient(45deg, red, blue)
+	&:hover
+		.gallery_title 
+			color: #ffffff 
+
+	&_menu
+		position: absolute
+		z-index: 3
+		right: 0
+		height: 90%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		&_link
+			a 
+				font-size: 50px
+				color: #000000 	
+
+				&:hover
+					color: #fff 
+					.gallary_menu
+						background-color: #fff(0,0,0,.6) 	
+
+
+	&_m_menu
+		display: none
+		position: absolute
+		z-index: 4
+		width: 60px 
+		height: 178px
+		background-color: rgba(0,0,0,.6) 
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		&_link
+			font-size: 40px
+			color: #ffffff 
+
+			&:hover
+				color: #000000 
+				.gallary_menu
+					background-color: #fff(0,0,0,.6) 
+	&_link 
+		right: 0
+		a 
+			position: absolute
+			top: 0
+			right: 0
+			font-size: 40px
+			color: #000000
+
+			&:hover
+				transition: 0.3s all
+				color: #fff
+				.gallery_link
+					color: #000
+
+	&_hamburger
+		display: none
+
+	&_title
+		text-align: center
+		color: #00000065
+		font-size: 35px
+		font-weight: 600
+		margin: 0
+		transition: 2s all
+		text-transform: uppercase
+
+	
+
+
+	.slick-slider 
+		margin: 0 auto
+		width: 700px
+		height: 423px
+		margin-top: 40px
+
+		.slick-slide
+			margin: 0 120px
+
+			img
+				height: 314px
+
+	.slick-prev, .slick-next 
+		border: none
+		background-color: #ffffff00
+
+		i 
+			color: #00000065
+			border: none
+			font-size: 50px
+
+			&:hover
+				transition: 0.3s all
+				color: #ffffff
+	
+	.slick-dots
+		display: flex
+		list-style-type: none
+
+	.dots
+		margin-top: 20px
+		display: block
+		width: 100%
+		padding: 0
+		list-style: none
+		text-align: center
+ 
+		li 
+			position: relative
+			display: inline-block
+			width: 20px
+			height: 20px
+			margin: 0 15px
+			padding: 0
+			cursor: pointer
+
+		button 
+			font-size: 0
+			line-height: 0
+			display: block
+			width: 20px
+			height: 20px
+			padding: 5px
+			cursor: pointer
+			color: transparent
+			border: 0
+			outline: none
+			background: transparent
+
+
+			&:hover, &:focus 
+  				outline: none;
+
+			&:hover:before, &:focus:before 
+  				opacity: 1
+
+			&:before 
+				font-family: 'slick'
+				font-size: 6px
+				line-height: 20px
+				position: absolute
+				top: 0
+				left: 0
+				width: 20px
+				height: 20px
+				content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg')
+				
+				text-align: center
+				opacity: .25
+				color: #ffffff
+				-webkit-font-smoothing: antialiased
+				-moz-osx-font-smoothing: grayscale
+
+		.slick-active 
+			button:before 
+				opacity: .75
+				color: #ffffff
+
+
+	.slick-prev
+			position: absolute
+			top: 33%
+			transform: translateX(-100%)
+	
+	.slick-next
+			position: absolute
+			top: 33%
+			right: 0
+			transform: translateX(100%)
+	
+	
+
+	 		
+// 	&_list_1
+// 		transform: translateX(-10%)
+	
+// 	&_list_2
+// 		display: block
+// 		margin-top: 60px
+	
+// 	&_list_2,
+// 		transform: translateY(-20px)
+
+// 	&_box_1
+// 		ul 
+// 			display: block
+// 			margin: auto 0 auto auto
+// 			width: 600px
+// 			height: 220px
+
+	
+
+// 		.desc_2_list_1
+// 			opacity: 1
+
+// 		.desc_2_list_2
+// 			opacity: 1
+
+// 	a 
+// 		display: block
+// 		position: relative
+// 		width: 35px
+// 		height: 35px
+// 		margin: auto 0 auto auto
+// 		z-index: 2
+// 		color: #ffffff
+// 		font-size: 35px
+
+
+.cost 
+	overflow: hidden
+	position: relative
+	margin-top: 25px
+	padding: 40px 0 60px
+	background: linear-gradient(150deg, red, blue)
+	&_title
+		text-align: center
+		color: #00000065
+		font-size: 35px
+		font-weight: 700
+		letter-spacing: 1.8px
+		text-transform: uppercase
+
+		&::after
+			content: ""
+			display: block
+			width: 0
+			height: 4px
+			margin: 0 auto
+			margin-top: 5px
+			background-color: #f8b500
+			transition: 1s all
+		
+	&:hover
+		.cost_title
+			transition: 1s all
+			color: #ffffff
+			&::after
+				width: 290px
+
+	&_duration
+		margin: 15px auto
+		display: flex
+		align-items: center
+		width: 670px
+		height: 67
+		
+		&_desc
+			margin-left: 21px
+			color: #f7c783
+			font-size: 24px
+			font-weight: 500
+			letter-spacing: 1.8px
+
+		&_img
+			filter: brightness(1.5)
+
+	&_hero
+		margin-top: 40px
+
+		&_title
+			text-align: center
+			color: #f7c783
+			font-size: 24px
+			font-weight: 600
+			letter-spacing: 1.8px
+			text-transform: uppercase
+
+		.col-xl-3
+			margin-top: 30px
+			background-color: #f7c78369
+			border-radius: 10%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: space-between
+			text-align: center
+
+			.img_3
+				margin-top: 30px
+			.item_text
+				margin-top: 15px
+				color: #f7c783
+				font-size: 16px
+				font-weight: 500 
+				span 
+					font-size: 18px
+					font-weight: 900
+					letter-spacing: 1.5px
+		 
+	&_full_sh
+		margin-top: 50px
+		&::after
+			content: ""
+			display: block
+			width: 0
+			height: 4px
+			margin: 0 auto
+			margin-top: 5px
+			background-color: #f8b500
+
+	&:hover
+		.cost_full_sh
+			&::after
+				width: 100%
+	.items
+		margin-top: 42px
+		display: flex
+		justify-content: space-around
+
+		.item
+			.circl
+				margin: 0 auto
+				width: 152px
+				height: 152px
+				background-image: linear-gradient(-33deg, #ff0000 10%, #fffc00 100%)
+				border-radius: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+
+			&_text
+				margin-top: 25px
+				font-size: 24px
+				font-weight: 500
+				letter-spacing: 1.8px
+				color: #f7c783	
+
+	&_nav
+		width: 60px
+		height: 156px
+		position: absolute 
+		bottom: -100%
+		right: 0
+		border-radius: 10px
+		background-color: #000000a8
+		transition: 0.3s all
+	
+		&_link 
+			position: relative
+			z-index: 1
+			display: flex
+			align-items: center
+			justify-content: center
+			a 
+				color: #ffffff
+				font-size: 35px
+	&:hover
+		.cost_nav
+			position: fixed
+			bottom: 0
+			z-index: 3
+			right: 10px
+
+	.col-lg-4
+		padding-bottom: 10px
+
+footer
+	.devider
+		width: 100%
+		height: 13px
+		background-color: #000000
+
+	.foot_menu
+		position: relative
+		display: flex
+		justify-content: center
+		width: 100%
+		padding: 30px 0 10px 0
+
+
+	.links
+		display: flex
+		align-items: center
+
+	.point
+		padding: 9px 20px
+		color: #897474
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+
+	.devid
+		border-right: 2px solid #000000
+
+	.foot_icons	
+		display: flex
+		.vk, .inst, .yout
+			margin: 10px
+			width: 55px
